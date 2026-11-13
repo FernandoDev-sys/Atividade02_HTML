@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheets" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Monte seu computador</title>
+</head>
+
+<body>
+    <header>
+        <h1>Monte seu computador</h1>
+
+    </header>
+
+    <nav> 
+      <a href="#apresentacao">Apresentação</a>  
+      <a href="#componentes">Componentes</a>
+      <a href="#personalizacao">Personalização</a>
+    </nav>
+ 
+    
+    <main>
+      
+       <section id="apresentacao">
+            <p>Nesta página serão exibidos componentes para computadores.</p>
+           <h2>Escolha os componentes do seu computador</h2>
+      </section>
+
+       <section id="componentes">
+          
+          <article>
+             <img 
+               src="imagens/processador_intel.webp"
+               alt="Processador intel Core-i7 de sexta geração."
+               width="318"
+               height="210"
+             >
+             <h3>Processador intel Core-i7 de sexta geração</h3>
+             <ul>
+                <li>Frequência de 3.4 GHz, podendo atingir até 4.0 GHz com turbo Boost.</li>
+                <li>Possui 4 núcleos e 8 MB de memória cache.</li>
+             </ul>
+          </article>
+
+          <article>
+            <img 
+               src="imagens/memoria_ram.webp"
+               alt="Memória RAM Husky preta com dissipador de calor e design gamer."
+               width="318"
+               height="210"
+            >
+            <h3>Memória RAM Husky Gamer DDR4.</h3>
+            <ul>
+               <li>Possui dissipador de calor para auxiliar no controle de temperatura.</li>
+               <li>Design gamer na cor preta, ideal para computadores de alto desempenho.</li>
+            </ul>
+          </article>
+
+           <article>
+              <img 
+                 src="imagens/ssd.png"
+                 alt="SSD SanDisk Plus preto com identificação Solid State Drive."
+                 width="318"
+                 height="210"
+              >
+              <h3>SSd SanDisk Plus</h3>
+              <ul>
+                <li>Tecnoligia SSd, proporcionando maior velocidade de leitura
+                    e gravação em comparação aos HDs tradicionais.
+                </li>
+                <li>Indicado para armazenar arquivos, programas e o sistema operacional.</li>
+              </ul>
+
+           </article>
+       </section>
+
+
+       <section id="personalizacao">
+          <h2>Personalização</h2>
+            <form>
+               <div>
+                  <label>Nome do Computador</label>
+                  <input type="text" id="name"
+                   name="Nome do Computador" 
+                   placeholder="Digite o nome do computador"
+                   maxlength="40">
+               </div>
+
+               <div> 
+                  <label for="processador">Processador</label>
+                  <select id="processador" name="processador">
+                     <option value="">Selecione uma opção</option>
+                     <option value="intel-i5">Intel Core i5</option>
+                     <option value="intel-i7">Intel Core i7</option>
+                     <option value="amd-ryzen-7">AMD Ryzen 7</option>
+                  </select>
+               </div>
+
+               <fieldset>
+                  <legend>Finalidade principal</legend>
+                  <label>
+                     <input type="radio" name="opcao" value="estudo">
+                     Estudo
+                  </label>
+                  <label>
+                     <input type="radio" name="opcao" value="trabalho">
+                     Trabalho
+                  </label>
+                  <label>
+                     <input type="radio" name="opcao" value="jogos">
+                     Jogos
+                  </label>
+               </fieldset>
+
+
+               <fieldset>
+                  <legend>Acessórios opcionais</legend>
+                  <label>
+                     <input type="checkbox" name="acessorio_opcional" value="webcam">
+                     Webcam
+                  </label>
+                  <label>
+                     <input type="checkbox" name="acessorio_opcional" value="headset">
+                      Headset
+                  </label>
+                  <label>
+                     <input type="checkbox" name="acessorio_opcional" value="mousepad">
+                     Mousepad
+                  </label>
+               </fieldset>
+   
+               <div>
+                  <label for="computador">Como pretende usar o computador?
+                  <textarea id="computador" name="computador" 
+                  rows="4" maxlength="300"></textarea>
+                  </label>
+               </div>
+            </form>
+       </section>
+    </main>
+    <footer>
+      <p>Atividade prática desenvolvida em sala de aula. &copy 2026</p>
+    </footer>
+</body>
+</html>
