@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheets" href="style.css"> 
+    <title>Monte seu computador</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Monte seu computador</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 
 <body>
@@ -21,18 +21,21 @@
       <a href="#componentes">Componentes</a>
       <a href="#personalizacao">Personalização</a>
     </nav>
- 
+    
+     
     
     <main>
-      
        <section id="apresentacao">
-            <p>Nesta página serão exibidos componentes para computadores.</p>
-           <h2>Escolha os componentes do seu computador</h2>
+           <h2 class="escolha">Escolha os componentes do seu computador</h2>
       </section>
+        
+       
+       <section id="componentes" class="pecas_pc">
 
-       <section id="componentes">
-          
-          <article>
+         <h2>Componentes</h2>
+
+         <div id="listaProdutos" class="grid"> 
+          <article class="card">
              <img 
                src="imagens/processador_intel.webp"
                alt="Processador intel Core-i7 de sexta geração."
@@ -46,7 +49,7 @@
              </ul>
           </article>
 
-          <article>
+          <article class="card">
             <img 
                src="imagens/memoria_ram.webp"
                alt="Memória RAM Husky preta com dissipador de calor e design gamer."
@@ -60,29 +63,29 @@
             </ul>
           </article>
 
-           <article>
+           <article class="card">
               <img 
                  src="imagens/ssd.png"
                  alt="SSD SanDisk Plus preto com identificação Solid State Drive."
                  width="318"
                  height="210"
               >
-              <h3>SSd SanDisk Plus</h3>
+              <h3>SSD SanDisk Plus</h3>
               <ul>
-                <li>Tecnoligia SSd, proporcionando maior velocidade de leitura
+                <li>Tecnologia SSD, proporcionando maior velocidade de leitura
                     e gravação em comparação aos HDs tradicionais.
                 </li>
                 <li>Indicado para armazenar arquivos, programas e o sistema operacional.</li>
               </ul>
 
            </article>
+           </div>
+
        </section>
-
-
        <section id="personalizacao">
           <h2>Personalização</h2>
             <form>
-               <div>
+               <div class="campo">
                   <label>Nome do Computador</label>
                   <input type="text" id="name"
                    name="Nome do Computador" 
@@ -90,7 +93,7 @@
                    maxlength="40">
                </div>
 
-               <div> 
+               <div class="campo"> 
                   <label for="processador">Processador</label>
                   <select id="processador" name="processador">
                      <option value="">Selecione uma opção</option>
@@ -100,7 +103,8 @@
                   </select>
                </div>
 
-               <fieldset>
+               
+               <fieldset class="finalidade">
                   <legend>Finalidade principal</legend>
                   <label>
                      <input type="radio" name="opcao" value="estudo">
@@ -115,9 +119,9 @@
                      Jogos
                   </label>
                </fieldset>
+               
 
-
-               <fieldset>
+               <fieldset class="finalidade">
                   <legend>Acessórios opcionais</legend>
                   <label>
                      <input type="checkbox" name="acessorio_opcional" value="webcam">
@@ -133,7 +137,7 @@
                   </label>
                </fieldset>
    
-               <div>
+               <div class="campo">
                   <label for="computador">Como pretende usar o computador?
                   <textarea id="computador" name="computador" 
                   rows="4" maxlength="300"></textarea>
@@ -143,7 +147,7 @@
        </section>
     </main>
     <footer>
-      <p>Atividade prática desenvolvida em sala de aula. &copy 2026</p>
+      <p>Atividade prática desenvolvida em sala de aula. &copy; 2026</p>
     </footer>
 </body>
 </html>

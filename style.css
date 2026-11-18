@@ -2,10 +2,171 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 
 body {
     font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+    background-color: #f4f4f4;
+}
+
+main {
+   width: 90%;
+   margin: auto;
+   padding: 20px;
+}
+
+header {
+  background-color: #0B365A;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: #F0F5F9;
+  text-align: center;
+  padding: 15px;
+  
+}
+
+nav a {
+   color: #007BFF;
+   text-decoration: none;
+   font-weight: bold;
+   margin: 20px;
+}
+
+nav a:hover{
+  color: #0e58a7;
+}
+
+
+
+nav a:focus, .card a:focus{
+  outline: 3px solid #007BFF;
+  outline-offset: 3px;
+}
+
+
+.pecas_pc h2 {
+  background-color: #087474;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+
+
+section {
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 10px;
+  
+}
+
+section h2{
+   margin-bottom: 15px;
+}
+
+.escolha{
+  border-radius: 10px;
+  background-color: #DAECF5;
+  color: #263238;
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+  
+}
+
+.card {
+  border: 2px solid #dddddd;
+  padding: 25px;
+  border-radius: 5px;
+  min-width: 0;
+  text-align: center;
+  box-shadow:0 2px 5px rgba(0, 0, 0, 0.3);
+  gap: 3px;
+  background-color:  #f9fafb;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+
+}
+
+.campo input, .campo select, .campo textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px; 
+    font: inherit;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus,
+.acoes-formulario button:focus{
+  outline: 3px solid #007BFF;
+  outline-offset: 2px;
+}
+
+.finalidade{
+  padding: 5px;
+  width: 100%;
+  border-radius:  5px;
+  border: 1px solid #cccccc;
+  font: inherit;
+}     
+
+.finalidade input:focus {
+  outline: 3px solid #007BFF;
+  outline-offset: 2px;
+}
+
+
+footer{
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  background-color: #0B365A;
+  color: #ffffff;
+}
+
+
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
 }
